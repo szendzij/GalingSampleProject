@@ -1,0 +1,27 @@
+{
+  "name": "gatling-postman-ts-demo",
+  "version": "3.13.402",
+  "private": true,
+  "type": "module",
+  "main": "target/bundle",
+  "dependencies": {
+    "@gatling.io/core": "3.13.402",
+    "@gatling.io/http": "3.13.402",
+    "@gatling.io/postman": "3.13.402"
+  },
+  "devDependencies": {
+    "@gatling.io/cli": "3.13.402",
+    "@types/node": "^22.13.10",
+    "prettier": "3.5.3",
+    "rimraf": "6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "clean": "rimraf target",
+    "format": "prettier --write \"**/*.ts\"",
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit && gatling build --typescript && esbuild src/index.ts --bundle --platform=node --outfile=dist/bundle.js",
+    "start": "npx gatling run --simulation 5ways-sample"
+  }
+}

@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Environment variables and config files with sensitive data
+.env
+.env.local
+
+
+# IDE files
+.vscode/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build directories
+dist/
+build/
+target/
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
