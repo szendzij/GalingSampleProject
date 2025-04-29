@@ -1,6 +1,9 @@
 # Node modules
 node_modules/
 
+#Resources
+resources/
+
 # Environment variables and config files with sensitive data
 .env
 .env.local
